@@ -16,7 +16,7 @@ body{
     place-items: center;
 }
 .scheme:not(:last-child){
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
 }
 .color{
     display: flex;
