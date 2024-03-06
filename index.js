@@ -65,7 +65,6 @@ const colorSchemes = [
         { code: "#e8bcb9", name: "" }
       ]
     },
-
   ]
 
 const colorContainer = document.querySelector('.color-scheme')
@@ -73,10 +72,12 @@ colorSchemes.map(scheme => {
     colorContainer.innerHTML += `
         <div class="scheme">
             ${scheme.colors.map(item => {
-                return `<div class="color" style="background-color: ${item.code};">
+                return `
+                  <div class="color" style="background-color: ${item.code};">
                     <span>Name: ${item.name}</span>
                     <span>Code: ${item.code.toUpperCase()}</span>
-                </div>`
+                  </div>
+                `
             }).join('')}
         </div>
     `
