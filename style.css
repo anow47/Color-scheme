@@ -37,4 +37,7 @@ body{
     .scheme {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+    .color-scheme{
+    padding: 0rem 0.5rem;
+}
 }
